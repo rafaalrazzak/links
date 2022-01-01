@@ -31,7 +31,7 @@ const items = [
     title: "Secrerto",
     subtitle: "The Secret Message",
     image: secreto,
-    link: "https://s.id/raf-ar", //instagram profile link
+    link: "https://s.id/s-raf-ar", //instagram profile link
   },
   // {
   //     "title": "Twitter",
