@@ -2,11 +2,11 @@ import website from "../assets/website.png";
 import github from "../assets/github.png";
 import instagram from "../assets/instagram.png";
 import secreto from "../assets/secreto.png";
-import appstore from "../assets/playstore.png";
-import youtube from "../assets/youtube.jpeg";
-import dribbble from "../assets/dribbble.png";
-import telegram from "../assets/telegram.png";
-import twitter from "../assets/twitter.png";
+// import appstore from "../assets/playstore.png";
+// import youtube from "../assets/youtube.jpeg";
+// import dribbble from "../assets/dribbble.png";
+// import telegram from "../assets/telegram.png";
+// import twitter from "../assets/twitter.png";
 
 const items = [
   {
