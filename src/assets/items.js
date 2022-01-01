@@ -1,12 +1,12 @@
-import website from '../assets/website.png'
-import github from '../assets/github.png'
-import instagram from '../assets/instagram.png'
-import secreto from '../assets/secreto.png'
-import appstore from '../assets/playstore.png'
-import youtube from '../assets/youtube.jpeg'
-import dribbble from '../assets/dribbble.png'
-import telegram from '../assets/telegram.png'
-import twitter from '../assets/twitter.png'
+import website from "../assets/website.png";
+import github from "../assets/github.png";
+import instagram from "../assets/instagram.png";
+import secreto from "../assets/secreto.png";
+import appstore from "../assets/playstore.png";
+import youtube from "../assets/youtube.jpeg";
+import dribbble from "../assets/dribbble.png";
+import telegram from "../assets/telegram.png";
+import twitter from "../assets/twitter.png";
 
 const items = [
   {
@@ -28,8 +28,8 @@ const items = [
     link: "https://instagram.com/rafa.ar.id", //instagram profile link
   },
   {
-    title: "Secrerto",
-    subtitle: "The Secret Message",
+    title: "Secreto",
+    subtitle: "The Secret Messages | for someone can't talk directly",
     image: secreto,
     link: "https://s.id/s-raf-ar", //instagram profile link
   },
@@ -66,4 +66,4 @@ const items = [
   //}
 ];
 
-export default items
+export default items;
