@@ -2,11 +2,13 @@ import website from "../assets/website.png";
 import github from "../assets/github.png";
 import instagram from "../assets/instagram.png";
 import secreto from "../assets/secreto.png";
+import twitter from "../assets/twitter.png";
+import discord from "../assets/discord.png";
+
 // import appstore from "../assets/playstore.png";
 // import youtube from "../assets/youtube.jpeg";
 // import dribbble from "../assets/dribbble.png";
 // import telegram from "../assets/telegram.png";
-// import twitter from "../assets/twitter.png";
 
 const items = [
   {
@@ -26,6 +28,18 @@ const items = [
     subtitle: "@rafa.ar.id | Personal Instagram",
     image: instagram,
     link: "https://instagram.com/rafa.ar.id", //instagram profile link
+  },
+  {
+    "title": "Twitter",
+    "subtitle": "@rafa_ar_id",
+    "image": twitter,
+    "link": "https://twitter.com/rafa_ar_id"// twitter profile link
+  },
+  {
+    title: "Discord",
+    subtitle: "Raf#6856",
+    image: discord,
+    link: "https://discordapp.com/users/431487386120093697", //instagram profile link
   },
   {
     title: "Secreto",
