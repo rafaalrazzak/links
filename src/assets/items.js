@@ -4,6 +4,7 @@ import instagram from "../assets/instagram.png";
 import secreto from "../assets/secreto.png";
 import twitter from "../assets/twitter.png";
 import discord from "../assets/discord.png";
+import facebook from "../assets/facebook.png";
 
 // import appstore from "../assets/playstore.png";
 // import youtube from "../assets/youtube.jpeg";
@@ -28,6 +29,12 @@ const items = [
     subtitle: "@rafa.ar.id | Personal Instagram",
     image: instagram,
     link: "https://instagram.com/rafa.ar.id", //instagram profile link
+  },
+  {
+    title: "Facebook",
+    subtitle: "Rafa Al Razzak | Personal Facebook",
+    image: facebook,
+    link: "https://facebook.com/rafa.ar.id", //instagram profile link
   },
   {
     "title": "Twitter",
