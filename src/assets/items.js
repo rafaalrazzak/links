@@ -20,7 +20,7 @@ const items = [
   },
   {
     title: "GitHub",
-    subtitle: "@raf-ar | Personal github",
+    subtitle: "@raf-ar | Personal Github",
     image: github,
     link: "https://github.com/raf-ar", //Github Profile link
   },
