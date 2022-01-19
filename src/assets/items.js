@@ -1,7 +1,7 @@
 import website from "../assets/website.png";
 import github from "../assets/github.png";
 import instagram from "../assets/instagram.png";
-import secreto from "../assets/secreto.png";
+import secret from "../assets/secret.png";
 import twitter from "../assets/twitter.png";
 import discord from "../assets/discord.png";
 import facebook from "../assets/facebook.png";
@@ -49,10 +49,10 @@ const items = [
     link: "https://discordapp.com/users/431487386120093697", //instagram profile link
   },
   {
-    title: "Secreto",
+    title: "Secret Message",
     subtitle: "The Secret Messages | for someone can't talk directly",
-    image: secreto,
-    link: "https://s.id/s-raf-ar", //instagram profile link
+    image: secret,
+    link: "https://s.id/s-raf", //instagram profile link
   },
   // {
   //     "title": "Twitter",
