@@ -6,7 +6,7 @@ import twitter from "./twitter.png";
 import discord from "./discord.png";
 import facebook from "./facebook.png";
 import blog from "./blog.png";
-impirt yt from "./youtube.jpeg";
+import yt from "./youtube.jpeg";
 
 const items = [
   {
