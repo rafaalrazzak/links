@@ -5,12 +5,7 @@ import secret from "../assets/secret.png";
 import twitter from "../assets/twitter.png";
 import discord from "../assets/discord.png";
 import facebook from "../assets/facebook.png";
-import blog drom "../assets/blog.jpg";
-
-// import appstore from "../assets/playstore.png";
-// import youtube from "../assets/youtube.jpeg";
-// import dribbble from "../assets/dribbble.png";
-// import telegram from "../assets/telegram.png";
+import blog from "../assets/blog.jpg";
 
 const items = [
   {
