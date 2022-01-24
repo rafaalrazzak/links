@@ -5,6 +5,7 @@ import secret from "../assets/secret.png";
 import twitter from "../assets/twitter.png";
 import discord from "../assets/discord.png";
 import facebook from "../assets/facebook.png";
+import blog drom "../assets/blog.jpg";
 
 // import appstore from "../assets/playstore.png";
 // import youtube from "../assets/youtube.jpeg";
@@ -17,6 +18,12 @@ const items = [
     subtitle: "raf-ar.web.app | Personal Web",
     image: website,
     link: "https://raf-ar.web.app", //your personal website or portfolio  link
+  },
+  {
+    title: "Blog",
+    subtitle: "Personal Blog | by vercel.pub",
+    image: blog,
+    link: "https://s.id/b-raf", //instagram profile link
   },
   {
     title: "GitHub",
@@ -53,38 +60,7 @@ const items = [
     subtitle: "The Secret Messages | for someone can't talk directly",
     image: secret,
     link: "https://s.id/s-raf", //instagram profile link
-  },
-  // {
-  //     "title": "Twitter",
-  //     "subtitle": "@heysagnik | Don't forget to follow me 😉",
-  //     "image": twitter,
-  //     "link": "https://twitter.com/heysagnik"// twitter profile link
-  // },
-  // {
-  //     "title": "Apps",
-  //     "subtitle": "Hub of my awesome 🔥 Apps",
-  //     "image": appstore,
-  //     "link": "#"//
-  // },
-  // {
-  //     "title": "YouTube",
-  //     "subtitle": "@Sagnik Sahoo | Official channel of mine",
-  //     "image": youtube,
-  //     "link": "https://www.youtube.com/channel/UCOUa9hvd4sJWQWQRIQctbSg"//youtube channel link
-  // },
-
-  // {
-  //     "title": "Dribbble",
-  //     "subtitle": "@virtuonic | Hub to the Shots of my 😎 apps ",
-  //     "image": dribbble,
-  //     "link": "https://dribbble.com/virtuonic" // Dribbble profile link
-  // },
-  // {
-  //     "title": "Telegram",
-  //     "subtitle": "@virtuonic | Chat with me instantly, Don't hesitate! ",
-  //     "image": telegram,
-  //     "link": "https://telegram.me/heysagnik" //Telegram Pofile
-  //}
+  }
 ];
 
 export default items;
