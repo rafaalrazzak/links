@@ -62,7 +62,11 @@ a:hover {
   margin-right: 2%;
   padding: 8px;
   border-radius: 8px;
-  height: 200px;
+  height: auto;
+  padding: 10px;
+  transition-property: all;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 150ms;
 }
 
 .Card:hover {
