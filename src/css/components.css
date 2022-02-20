@@ -71,7 +71,6 @@ transition-duration: 150ms;
 
 .Card:hover {
   background: var(--card-hover-bg);
-  border: 1px solid hsla(0, 0%, 87.8%, 0);
 }
 
 .data {
