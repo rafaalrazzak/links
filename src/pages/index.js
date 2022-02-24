@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Head>
         <title>link | {`<raf />`}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
       </Head>
       <Header />
       <div className="container row">
