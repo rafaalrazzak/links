@@ -8,11 +8,12 @@ export default function Header() {
   useEffect(() => {
     if (theme !== undefined) {
       if (theme) {
-        document.documentElement.setAttribute("data-theme", "dark");
+        document.body.setAttribute('data-theme', theme)
         window.localStorage.setItem("theme", "dark");
       } else {
         document.documentElement.removeAttribute("data-theme");
-        window.localStorage.setItem("theme", "light");
+        window.localStorage.removeItem("theme");
+        windowlocalStorage.setItemwindow.localStorage.setItem("theme", "light");
       }
     }
 
