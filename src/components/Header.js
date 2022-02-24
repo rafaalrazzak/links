@@ -6,15 +6,8 @@ import { useState, useEffect } from "react"
 export default function Header() {
   const [theme, setTheme] = useState(undefined)
   useEffect(() => {
-    if (theme !== undefined) {
-      if (theme) {
-        document.body.setAttribute('data-theme', theme)
-        window.localStorage.setItem("theme", "dark");
-      } else {
-        document.documentElement.removeAttribute("data-theme");
-        window.localStorage.removeItem("theme");
-        windowlocalStorage.setItemwindow.localStorage.setItem("theme", "light");
-      }
+    if (theme !== undefined || null) {
+      document.body.setAttribute('data-theme', theme)
     }
 
   }, [theme])

@@ -1,12 +1,12 @@
 import  Script  from 'next/script'
-import splitbee from '@splitbee/web'
+
 import Header from '@/components/Header'
 import Card from '@/components/Card'
 import Footer from '@/components/Footer'
 import items from '@/assets/items'
 
 export default function Home() {
-  splitbee.init()
+  
   return (
     <>
      <Header />
