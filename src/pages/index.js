@@ -1,15 +1,19 @@
-import  Script  from 'next/script'
+import Script from 'next/script'
 
 import Header from '@/components/Header'
 import Card from '@/components/Card'
 import Footer from '@/components/Footer'
 import items from '@/assets/items'
-
+import Head from "next/head"
 export default function Home() {
-  
+
   return (
     <>
-     <Header />
+      <Head>
+        <title>link | {`<raf />`}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Header />
       <div className="container row">
         {
           items.map((item, i) => {
@@ -28,8 +32,8 @@ export default function Home() {
       <Footer />
 
 
-        <Script src="https://cdn.splitbee.io/sb.js" />
-      
+      <Script src="https://cdn.splitbee.io/sb.js" />
+
     </>
   )
 }
