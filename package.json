@@ -8,6 +8,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^4.1.17",
+    "next": "^12.1.0",
     "node": "^14.4.0",
     "nth-check": ">=2.0.1",
     "react": "^17.0.2",
@@ -16,10 +17,10 @@
     "react-scripts": "^5.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "eslintConfig": {
     "extends": "react-app"
