@@ -4,33 +4,40 @@ import logo from '@/assets/logo-r.svg'
 import Image from "next/image"
 import { useState, useEffect } from "react"
 export default function Header() {
-  const [theme, setTheme] = useState(undefined)
-  useEffect(() => {
-    if (theme !== undefined || null) {
-      document.body.setAttribute('data-theme', theme)
-    }
+	const [darkMode, setDarkMode] = useState()
+	useEffect(() => {
+		setDarkMode(document.documentElement.classList.contains(darkMode))
+	}, []);
+	useEffect(() => {
+		if (darkMode) {
+			window.document.documentElement.classList.add('dark')
+			localStorage.setItem("darkMode", "true")
+		} else {
+			window.document.documentElement.classList.remove('dark')
+			localStorage.setItem("darkMode", "false")
+		}
 
-  }, [theme])
-  const isDark = theme === 'dark'
-  const handleSwitchTheme = () => {
-    setTheme(isDark ? 'light' : 'dark')
-  }
+	}, [darkMode])
+	const isDark = darkMode == true
+		const handleSwitchTheme = () => {
+		setDarkMode(isDark ? false : true)
+	}
 
-  return (
-    <div className="Header container">
-      <div className="ten columns Header__inner">
-        <Image src={logo} alt="logo" width="40" height="40" />
-        &nbsp;&nbsp;&nbsp;
-        <h2>
-          <b>{"<raf />"}</b>
-        </h2>
-      </div>
+	return (
+		<div className="p-5 font-semibold flex justify-between items-center relative w-full box-border">
+			<div className="w-full float-left box-border flex items-center">
+				<Image src={logo} alt="logo" width="40" height="40" />
+				&nbsp;&nbsp;&nbsp;
+        <h2 className="text-xl font-bold bg-gradient-to-r from-teal-600 to-teal-400 bg-clip-text text-transparent">
+					<b>{"<raf />"}</b>
+				</h2>
+			</div>
 
 
-      <button className="switch-theme-button" onClick={handleSwitchTheme}>
-        {isDark ? <SunIcon color="white" /> : <MoonIcon color="white" />}
-      </button>
-    </div>
-  )
+			<button className="text-white cursor-pointer flex text-center no-underline text-base select-none bg-gradient-to-r from-teal-600 to-teal-400 w-24 rounded-full h-8 justify-center items-center drop-shadow-xl" onClick={handleSwitchTheme}>
+				{isDark ? <SunIcon /> : <MoonIcon />}
+			</button>
+		</div>
+	)
 
 }

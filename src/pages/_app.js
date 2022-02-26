@@ -1,6 +1,4 @@
-import '../css/skeleton.css'
-import '../css/normalize.css'
-import '../css/components.css'
+import '@/css/globals.css'
 import splitbee from '@splitbee/web'
 export default function App({ Component, pageProps }) {
   splitbee.init()
