@@ -20,7 +20,7 @@ export default function Card({ link, i, title, subtitle, cover, id }) {
 	
 	return (
 		<>
-			<div className="w-full sm:w-1/2 md:w-1/3 flex flex-col" key={id}><div className="p-6 transition ease-in-out delay-150 duration-300 rounded-lg m-8 hover:bg-slate-100 hover:scale-105 hover:drop-shadow-sm dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-gradient-to-b from-slate-700 to-slate-800 dark:hover:drop-shadow-md"
+			<div className="w-full md:w-1/2 lg:w-1/3 flex flex-col" key={id}><div className="p-6 transition ease-in-out delay-150 duration-300 rounded-lg m-8 hover:bg-slate-100 hover:scale-105 hover:drop-shadow-sm dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-gradient-to-b from-slate-700 to-slate-800 dark:hover:drop-shadow-md"
 >
 				<a href={link} target="_blank" rel="noopener noreferrer" >
 					<motion.div
