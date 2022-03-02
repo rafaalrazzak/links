@@ -4,23 +4,23 @@ import logo from '@/assets/logo-r.svg'
 import Image from "next/image"
 import { useState, useEffect } from "react"
 export default function Header() {
-	const [darkMode, setDarkMode] = useState()
+	const [theme, setTheme] = useState()
+
 	useEffect(() => {
-		setDarkMode(document.documentElement.classList.contains(darkMode))
-	}, []);
+		setTheme(localStorage.getItem("theme")	)
+	}, [])
 	useEffect(() => {
-		if (darkMode) {
+		if (theme === "dark") {
 			window.document.documentElement.classList.add('dark')
-			localStorage.setItem("darkMode", "true")
+			localStorage.setItem("theme", "dark")
 		} else {
 			window.document.documentElement.classList.remove('dark')
-			localStorage.setItem("darkMode", "false")
+			localStorage.setItem("theme", "light")
 		}
-
-	}, [darkMode])
-	const isDark = darkMode == true
-		const handleSwitchTheme = () => {
-		setDarkMode(isDark ? false : true)
+	}, [theme])
+	const isDark = theme == "dark";
+	const handleSwitchTheme = () => {
+		setTheme(isDark ? "light" : "dark")
 	}
 
 	return (
