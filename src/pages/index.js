@@ -2,12 +2,12 @@ import Head from "next/head"
 import Layout from '@/components/Layout'
 import Card from '@/components/Card'
 import items from '@/assets/items'
-export default function Home() {
 
+export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Link | {`<raf />`}</title>
+				<title>Link | `<raf />`</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 			</Head>
 			<Layout>
