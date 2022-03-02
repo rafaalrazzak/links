@@ -6,7 +6,7 @@ import twitter from "./twitter.png";
 import discord from "./discord.png";
 import facebook from "./facebook.png";
 import blog from "./blog.png";
-import yt from "./youtube.jpeg";
+import yt from "./youtube.png";
 
 const items = [
   {
@@ -52,7 +52,7 @@ const items = [
     link: "https://discordapp.com/users/431487386120093697"
   },
   {
-    title: "Youtube",
+    title: "YouTube",
     subtitle: "RAF",
     image: yt,
     link: "https://s.id/chyt"
