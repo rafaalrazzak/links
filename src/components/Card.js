@@ -20,7 +20,7 @@ export default function Card({ link, i, title, subtitle, cover, id }) {
 
 	return (
 		<>
-			<div className="w-full md:w-1/2 lg:w-1/3 flex flex-col overflow-hidden" key={id}>
+			<div className="w-full md:w-1/2 lg:w-1/3 flex flex-col" key={id}>
 				<div className="p-6 transition ease-in-out delay-150 duration-300 rounded-lg m-8 hover:bg-slate-100/50 hover:backdrop-blur-lg hover:scale-105 hover:drop-shadow-sm dark:bg-slate-700/50 dark:backdrop-blur-lg dark:text-slate-200 dark:hover:drop-shadow-md backdrop-blur-xl">
 					<a href={link} target="_blank" rel="noopener noreferrer" >
 						<motion.div

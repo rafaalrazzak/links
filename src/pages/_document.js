@@ -13,7 +13,7 @@ class MyDocument extends Document {
 					<link rel="shortcut icon" href="/logo-r.svg" />
 
 				</Head>
-				<body className="bg-white dark:bg-slate-800" >
+				<body className="bg-[#F5F1ED] dark:bg-slate-800 transition ease-in-out delay-150 duration-300" >
 					<Main />
 					<NextScript />
 				</body>
