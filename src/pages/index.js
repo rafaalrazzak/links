@@ -15,6 +15,7 @@ export default function Home() {
 					items.map((item, i) => {
 						return (
 							<Card
+						key={item.id} 
 								id={item.id}
 								i={i}
 								title={item.title}
