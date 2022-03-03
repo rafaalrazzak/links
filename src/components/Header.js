@@ -24,11 +24,10 @@ export default function Header() {
 	}
 
 	return (
-		<div className="p-5 font-semibold flex justify-between items-center relative w-full box-border">
+		<div className="p-6 font-semibold flex justify-between items-center relative w-full box-border">
 			<div className="w-full float-left box-border flex items-center">
 				<Image src={logo} alt="logo" width="40" height="40" />
-				&nbsp;&nbsp;&nbsp;
-        <h2 className="text-xl font-bold bg-gradient-to-r from-teal-600 to-teal-400 bg-clip-text text-transparent">
+	<h2 className="text-xl font-bold bg-gradient-to-r from-teal-600 to-teal-400 bg-clip-text text-transparent pr-3">
 					<b>{"<raf />"}</b>
 				</h2>
 			</div>
