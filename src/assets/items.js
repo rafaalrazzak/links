@@ -13,56 +13,56 @@ const items = [
     title: "Website",
     subtitle: "raf-ar.web.app | Personal Web",
     image: website,
-    link: "https://raf-ar.web.app"
+    link: "https://raf-ar.web.app",
   },
   {
     title: "Blog",
-    subtitle: "Personal Blog | by Vercel",
+    subtitle: "Personal Blog",
     image: blog,
-    link: "https://s.id/b-raf"
+    link: "https://ksana.in/b-raf",
   },
   {
     title: "GitHub",
     subtitle: "@raf-ar | Personal Github",
     image: github,
-    link: "https://github.com/raf-ar"
+    link: "https://github.com/raf-ar",
   },
   {
     title: "Instagram",
     subtitle: "@rafa.ar.id | Personal Instagram",
     image: instagram,
-    link: "https://instagram.com/rafa.ar.id"
+    link: "https://instagram.com/rafa.ar.id",
   },
   {
     title: "Facebook",
     subtitle: "Rafa Al Razzak | Personal Facebook",
     image: facebook,
-    link: "https://facebook.com/rafa.ar.id"
+    link: "https://facebook.com/rafa.ar.id",
   },
   {
-    "title": "Twitter",
-    "subtitle": "@rafa_ar_id",
-    "image": twitter,
-    "link": "https://twitter.com/rafa_ar_id"
+    title: "Twitter",
+    subtitle: "@rafa_ar_id",
+    image: twitter,
+    link: "https://twitter.com/rafa_ar_id",
   },
   {
     title: "Discord",
     subtitle: "Raf#6856",
     image: discord,
-    link: "https://discordapp.com/users/431487386120093697"
+    link: "https://discordapp.com/users/431487386120093697",
   },
   {
     title: "YouTube",
     subtitle: "RAF",
     image: yt,
-    link: "https://s.id/chyt"
+    link: "https://s.id/chyt",
   },
   {
     title: "Secret Message",
     subtitle: "The Secret Messages | for someone can't talk directly",
     image: secret,
-    link: "https://s.id/s-raf"
-  }
+    link: "https://s.id/s-raf",
+  },
 ];
 
 export default items;
