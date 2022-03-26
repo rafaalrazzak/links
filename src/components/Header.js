@@ -32,7 +32,7 @@ export default function Header({ title, logo }) {
       </div>
 
       <button
-        className="flex h-8 w-12 cursor-pointer select-none items-center justify-center rounded-full bg-gradient-to-r from-teal-600 to-teal-400 text-center text-base text-white no-underline drop-shadow-xl"
+        className="flex h-8 w-20 cursor-pointer select-none items-center justify-center rounded-full bg-gradient-to-r from-teal-600 to-teal-400 text-center text-base text-white no-underline drop-shadow-xl"
         onClick={handleSwitchTheme}
       >
         {isDark ? <SunIcon /> : <MoonIcon />}

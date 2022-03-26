@@ -1,5 +1,6 @@
 import Head from "next/head";
 import siteMetadata from "@/data/siteMetadata";
+import { useRouter } from "next/router";
 export const PageSeo = ({ title, description }) => {
   const router = useRouter();
   return (
@@ -7,6 +8,7 @@ export const PageSeo = ({ title, description }) => {
       <title>{`${title}`}</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
+      <link rel="icon" type="image/svg" href="/logo-r.svg" />
       <meta
         property="og:url"
         content={`${siteMetadata.siteUrl}${router.asPath}`}
@@ -19,6 +21,7 @@ export const PageSeo = ({ title, description }) => {
         property="og:image"
         content={`${siteMetadata.siteUrl}${siteMetadata.socialBanner}`}
       />
+
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
