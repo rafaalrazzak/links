@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Layout from "@/components/Layout";
 import Card from "@/components/Card";
 import { alas } from "@/assets/items";
@@ -7,13 +6,10 @@ import logoAlas from "@/assets/logo-alas.png";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Links | Al - Asiyah</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-        />
-      </Head>
+      <PageSeo
+        title="Links | Al-Asiyah"
+        description="a simple website for any social media link"
+      />
       <Layout headTitle="SMK Al-Asiyah" headLogo={logoAlas}>
         {alas.map((item, i) => {
           return (

@@ -6,7 +6,9 @@
   "@/css/*":
   ["src/css/*"],
   "@/assets/*":
-  ["src/assets/*"]
+  ["src/assets/*"],
+  "@/data/*":
+  ["src/data/*"]
     }
   }
 }
