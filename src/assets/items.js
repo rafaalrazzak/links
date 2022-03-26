@@ -65,4 +65,25 @@ const items = [
   },
 ];
 
+export const alas = [
+  {
+    title: "YouTube",
+    subtitle: "SMK AL-ASIYAH OFFICIAL",
+    image: yt,
+    link: "https://www.youtube.com/channel/UCsfNGLVQLSHf7N0uRLcESPg",
+  },
+  {
+    title: "Instagram",
+    subtitle: "@smkalasiyah",
+    image: instagram,
+    link: "https://www.instagram.com/smkalasiyah",
+  },
+  {
+    title: "Facebook",
+    subtitle: "SMK TI Al-Asiyah",
+    image: facebook,
+    link: "https://www.facebook.com/Smkalasiyah/",
+  },
+];
+
 export default items;

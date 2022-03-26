@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "@/components/Layout";
 import Card from "@/components/Card";
 import items from "@/assets/items";
+import raf from "@/assets/logo-r.svg";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         />
       </Head>
-      <Layout>
+      <Layout headTitle="< raf />" headLogo={raf}>
         {items.map((item, i) => {
           return (
             <Card

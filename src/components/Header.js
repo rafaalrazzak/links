@@ -1,9 +1,8 @@
 import SunIcon from "@/components/Icons/SunIcon";
 import MoonIcon from "@/components/Icons/MoonIcon";
-import logo from "@/assets/logo-r.svg";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-export default function Header({ title }) {
+export default function Header({ title, logo }) {
   const [theme, setTheme] = useState();
 
   useEffect(() => {
