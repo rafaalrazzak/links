@@ -16,7 +16,7 @@ export const PageSeo = ({ title, description }) => {
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content="Link | by <raf/>" />
       <meta
         property="og:image"
         content={`${siteMetadata.siteUrl}${siteMetadata.socialBanner}`}
@@ -27,7 +27,7 @@ export const PageSeo = ({ title, description }) => {
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
       />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content="Link | by <raf/>" />
       <meta name="twitter:description" content={description} />
       <meta
         name="twitter:image"
