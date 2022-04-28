@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="mb-4 text-center text-slate-600 dark:text-slate-200">
+    <div className="mb-4 text-center text-slate-600  dark:text-slate-200">
       <p className="text-sm ">
         Made with <span className="text-[#db2929]">❤️ </span>
         by{" "}

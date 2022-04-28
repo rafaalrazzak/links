@@ -5,22 +5,17 @@ import secret from "./secret.png";
 import twitter from "./twitter.png";
 import discord from "./discord.png";
 import facebook from "./facebook.png";
-import blog from "./blog.png";
 import yt from "./youtube.png";
 
 const items = [
   {
     title: "Website",
-    subtitle: "raf-ar.web.app | Personal Web",
+    subtitle: "Personal Web",
     image: website,
-    link: "https://raf-ar.web.app",
+    link: "https://ksana.in/rafa"
   },
-  {
-    title: "Blog",
-    subtitle: "Personal Blog",
-    image: blog,
-    link: "https://ksana.in/b-raf",
-  },
+
+
   {
     title: "GitHub",
     subtitle: "@raf-ar | Personal Github",

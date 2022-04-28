@@ -12,8 +12,8 @@ export default function Layout({ children, headTitle, headLogo }) {
       <div
         className="flex-end fixed inset-x-0 bottom-0
              flex
-             justify-center"
-      >
+             justify-center dark:mix-blend-difference"
+      >.
         <Footer />
       </div>
     </div>
