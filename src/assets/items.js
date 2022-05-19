@@ -36,9 +36,9 @@ const items = [
   },
   {
     title: "Twitter",
-    subtitle: "@rafa_ar_id",
+    subtitle: "@rafaalrazzak",
     image: twitter,
-    link: "https://twitter.com/rafa_ar_id",
+    link: "https://twitter.com/rafaalrazzak",
   },
   {
     title: "Discord",
