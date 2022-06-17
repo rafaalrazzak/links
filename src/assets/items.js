@@ -14,7 +14,13 @@ const items = [
     image: website,
     link: "https://ksana.in/rafa"
   },
-
+  
+  {
+    title: "Secret Message",
+    subtitle: "The Secret Messages | for someone can't talk directly",
+    image: secret,
+    link: "https://s.id/s-raf",
+  },
 
   {
     title: "GitHub",
@@ -51,12 +57,6 @@ const items = [
     subtitle: "RAF",
     image: yt,
     link: "https://s.id/chyt",
-  },
-  {
-    title: "Secret Message",
-    subtitle: "The Secret Messages | for someone can't talk directly",
-    image: secret,
-    link: "https://s.id/s-raf",
   },
 ];
 
