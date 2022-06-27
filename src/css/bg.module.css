@@ -1,0 +1,7 @@
+.beams {
+  background-image: url("/bg/hero@75.jpg");
+}
+
+:global(.dark) .beams {
+  background-image: url("/bg/hero-dark@90.jpg");
+}

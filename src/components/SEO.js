@@ -8,7 +8,7 @@ export const PageSeo = ({ title, description }) => {
       <title>{`${title}`}</title>
       <meta name="robots" content="follow, index" />
       <meta name="description" content={description} />
-      <link rel="icon" type="image/svg" href="/logo-r.svg" />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       <meta
         property="og:url"
         content={`${siteMetadata.siteUrl}${router.asPath}`}

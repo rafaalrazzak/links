@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-export default function Card({ link, i, title, subtitle, cover}) {
+export default function Card({ link, i, title, subtitle, cover }) {
   const variants = {
     visible: (i) => ({
       opacity: 1,
