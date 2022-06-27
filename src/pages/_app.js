@@ -1,4 +1,3 @@
-import splitbee from "@splitbee/web"
 import "@/css/globals.css";
 import client from "@/graphcms/client";
 
