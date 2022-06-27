@@ -9,11 +9,7 @@ export default function Layout({ children, headTitle, headLogo }) {
         <Gradient />
         <div className="flex flex-wrap">{children}</div>
       </div>
-      <div
-        className="flex-end fixed inset-x-0 bottom-0
-             flex
-             justify-center dark:mix-blend-difference"
-      >.
+      <div className="flex-end fixed inset-x-0 bottom-0 flex justify-center">
         <Footer />
       </div>
     </div>

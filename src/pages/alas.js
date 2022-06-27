@@ -16,8 +16,7 @@ export default function Home() {
         {alas.map((item, i) => {
           return (
             <Card
-              key={item.id}
-              id={item.id}
+              key={i}
               i={i}
               title={item.title}
               subtitle={item.subtitle}

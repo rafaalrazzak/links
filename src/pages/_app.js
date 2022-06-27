@@ -1,8 +1,11 @@
 import '@/css/globals.css'
-import splitbee from '@splitbee/web'
+import client from "@/graphcms/client"
+
+import {ApolloProvider} from "@apollo/client";
 export default function App({ Component, pageProps }) {
-  splitbee.init()
   return (
+		<ApolloProvider client={client}>
     <Component {...pageProps} />
+		</ApolloProvider>
   )
 }

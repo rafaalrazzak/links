@@ -8,7 +8,9 @@
   "@/assets/*":
   ["src/assets/*"],
   "@/data/*":
-  ["src/data/*"]
+  ["src/data/*"],
+	"@/lib/*":["src/lib/*"],
+	"@/graphcms/*": ["src/graphcms/*"]
     }
   }
 }
