@@ -9,7 +9,6 @@
     "framer-motion": "^4.1.17",
     "graphql": "^16.5.0",
     "next": "^12.1.0",
-    "node": "^14.4.0",
     "postcss": "^8.4.7",
     "react": "^17.0.2",
     "react-dom": "^16.13.1",
@@ -20,22 +19,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "lint": "next lint",
+    "prettier": "prettier . -w "
   },
   "devDependencies": {
     "prettier": "^2.5.1",

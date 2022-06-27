@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-export default function Card({ link, i, title, subtitle, cover, cW, cH }) {
+export default function Card({ link, i, title, subtitle, cover}) {
   const variants = {
     visible: (i) => ({
       opacity: 1,
@@ -20,8 +20,12 @@ export default function Card({ link, i, title, subtitle, cover, cW, cH }) {
   return (
     <>
       <div className="flex w-full flex-col md:w-1/2 lg:w-1/3">
-        <div className="m-8 outline outline-slate-400/10 dark:outline-slate-300/10 rounded-lg p-6 backdrop-blur-xl transition delay-150 duration-300 ease-in-out hover:scale-105 hover:bg-slate-100/50 hover:drop-shadow-sm hover:backdrop-blur-lg dark:bg-slate-700/50 dark:text-slate-200 dark:backdrop-blur-lg dark:hover:drop-shadow-md">
-          <a href={link} target="_blank" rel="noopener noreferrer">
+        <div className="m-8 rounded-lg p-6 outline outline-primary-400/10 backdrop-blur-xl transition delay-150 duration-300 ease-in-out hover:scale-105 hover:bg-primary-100/50 hover:drop-shadow-sm hover:backdrop-blur-lg dark:bg-primary-700/50 dark:text-primary-200 dark:outline-primary-300/10 dark:backdrop-blur-lg dark:hover:drop-shadow-md">
+          <a
+            href={`?r=https://${link}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.div
               initial="hidden"
               animate="visible"
@@ -30,8 +34,8 @@ export default function Card({ link, i, title, subtitle, cover, cW, cH }) {
             >
               <Image
                 className="w-full rounded-lg object-cover"
-								width={cW}
-                height={cH}
+                width={350}
+                height={120}
                 src={cover}
                 alt={title}
               />

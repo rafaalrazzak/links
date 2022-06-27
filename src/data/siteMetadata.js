@@ -1,6 +1,6 @@
 const siteMetadata = {
   language: "en-us",
-  siteUrl: "https://l-to.vercel.app",
+  siteUrl: "https://l.rafaar.me",
   socialBanner: "/socialBanner.png",
 };
 

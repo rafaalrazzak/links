@@ -25,14 +25,14 @@ export default function Header({ title, logo }) {
   return (
     <div className="relative box-border flex w-full items-center justify-between p-6 font-semibold">
       <div className="float-left box-border flex w-full items-center">
-        <Image src={logo} alt="logo" width="40" height="40" />
+        {logo && <Image src={logo} alt="logo" width="40" height="40" />}
         <h2 className="bg-gradient-to-r from-teal-600 to-teal-400 bg-clip-text px-3 text-xl font-bold text-transparent">
           {title}
         </h2>
       </div>
 
       <button
-        className="flex h-8 w-20 cursor-pointer select-none items-center justify-center rounded-full bg-gradient-to-r from-teal-600 to-teal-400 text-center text-base text-white no-underline drop-shadow-xl"
+        className="flex h-8 w-16 cursor-pointer select-none items-center justify-center rounded-full bg-gradient-to-r from-teal-600 to-teal-400 text-center text-base text-white no-underline drop-shadow-xl"
         onClick={handleSwitchTheme}
       >
         {isDark ? <SunIcon /> : <MoonIcon />}

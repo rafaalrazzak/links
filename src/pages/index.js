@@ -1,27 +1,41 @@
-import {useQuery} from "@apollo/client"
 import Layout from "@/components/Layout";
 import Card from "@/components/Card";
-import items from "@/assets/items";
 import { PageSeo } from "@/components/SEO";
 import raf from "@/assets/logo-r.svg";
-import QUERY from "@/graphcms/query"
+import client from "@/graphcms/client";
+import QUERY from "@/graphcms/query";
 
+export async function getServerSideProps(ctx) {
+  const url = ctx.query.r;
 
-export default function Home() {
-	
- const { data:url } = useQuery(QUERY);
- 
+  const { data } = await client.query({
+    query: QUERY,
+  });
 
+  if (url) {
+    return {
+      redirect: {
+        destination: url,
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: { data }, // will be passed to the page component as props
+  };
+}
+
+export default function Home({ data }) {
   return (
     <>
       <PageSeo
-        title="Links | <raf />"
+        title="links | raf"
         description="a simple website for any social media link"
       />
 
-
       <Layout headTitle="< raf />" headLogo={raf}>
-				{url.map((item, i) => {
+        {data?.urls.map((item, i) => {
           return (
             <Card
               key={item.id}
@@ -30,9 +44,8 @@ export default function Home() {
               subtitle={item.description}
               link={item.url}
               cover={item.thumbnail.url}
-							cW={item.thumbnail.width}
+              cW={item.thumbnail.width}
               cH={item.thumbnail.height}
-
             ></Card>
           );
         })}

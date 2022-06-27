@@ -1,18 +1,19 @@
 import { gql } from "@apollo/client";
 
-const QUERY = gql`{
-  urls {
-    id
-    title
-    description
-    url
-    thumbnail {
+const QUERY = gql`
+  {
+    urls {
+      id
+      title
+      description
       url
-      width
-      height
+      thumbnail {
+        url
+        width
+        height
+      }
     }
   }
-}
-`
+`;
 
-export default QUERY
+export default QUERY;
