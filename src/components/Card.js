@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-export default function Card({ link, i, title, subtitle, cover }) {
+export default function Card({ link, i, title, subtitle, cover, cW, cH }) {
   const variants = {
     visible: (i) => ({
       opacity: 1,
@@ -29,7 +29,9 @@ export default function Card({ link, i, title, subtitle, cover }) {
               variants={variants}
             >
               <Image
-                className="h-24 w-full rounded-lg object-cover"
+                className="w-full rounded-lg object-cover"
+								width={cW}
+                height={cH}
                 src={cover}
                 alt={title}
               />

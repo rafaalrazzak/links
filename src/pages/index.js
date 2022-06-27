@@ -30,6 +30,9 @@ export default function Home() {
               subtitle={item.description}
               link={item.url}
               cover={item.thumbnail.url}
+							cW={item.thumbnail.width}
+              cH={item.thumbnail.height}
+
             ></Card>
           );
         })}
