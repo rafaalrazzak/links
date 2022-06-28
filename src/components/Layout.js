@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Bg from "@/components/Bg";
 export default function Layout({ children, headTitle, headLogo }) {
   return (
-    <div className="relative lg:mx-24">
+    <div className="lg:mx-24">
       <Header title={headTitle} logo={headLogo} />
       <Bg />
       <div className="mx-auto flex flex-wrap items-center">{children}</div>
