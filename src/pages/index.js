@@ -28,7 +28,7 @@ export async function getServerSideProps(ctx) {
 
 export default function Home({ data }) {
   return (
-    <>
+    <div className="relative">
       <PageSeo
         title="links | raf"
         description="a simple website for any social media link"
@@ -50,6 +50,6 @@ export default function Home({ data }) {
           );
         })}
       </Layout>
-    </>
+    </div>
   );
 }
