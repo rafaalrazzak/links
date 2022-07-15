@@ -1,4 +1,3 @@
-import { PageSeo } from "@/components/SEO";
 import client from "@/graphcms/client";
 import REDIRECT from "@/graphcms/redirect";
 
@@ -28,7 +27,7 @@ export async function getServerSideProps(ctx) {
   if (redirect !== name) {
     return {
       redirect: {
-        destination: '/',
+        destination: "/",
         permanent: false,
       },
     };
@@ -39,14 +38,10 @@ export async function getServerSideProps(ctx) {
       destination: url,
       permanent: false,
     },
-    props: { name }, // will be passed to the page component as props
+    props: {}, // will be passed to the page component as props
   };
 }
 
-export default function Home({ name }) {
-  return (
-    <>
-      <PageSeo title={`${name} | raf`} />
-    </>
-  );
+export default function Home() {
+  return <></>;
 }
