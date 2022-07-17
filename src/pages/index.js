@@ -6,27 +6,28 @@ import client from "@/graphcms/client";
 import QUERY from "@/graphcms/query";
 
 export async function getServerSideProps(ctx) {
-  const url = ctx.query.r;
-
+  const clientUrl = ctx.query.r;
   const { data } = await client.query({
     query: QUERY,
   });
 
-  if (url) {
+  const { urls } = data;
+
+  if (clientUrl) {
     return {
       redirect: {
-        destination: url,
-        permanent: false,
+        destination: clientUrl,
+        permanent: true,
       },
     };
   }
 
   return {
-    props: { data }, // will be passed to the page component as props
+    props: { urls },
   };
 }
 
-export default function Home({ data }) {
+export default function Home({ urls }) {
   return (
     <div className="relative">
       <PageSeo
@@ -35,7 +36,7 @@ export default function Home({ data }) {
       />
 
       <Layout headTitle="< raf />" headLogo={raf}>
-        {data?.urls.map((item, i) => {
+        {urls?.map((item, i) => {
           return (
             <Card
               key={item.id}
