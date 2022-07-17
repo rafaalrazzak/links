@@ -30,7 +30,7 @@ export default function Home({ data }) {
   return (
     <div className="relative">
       <PageSeo
-        title="links | raf"
+        title="Links | raf"
         description="a simple website for any social media link"
       />
 
