@@ -25,7 +25,15 @@ export default function Header({ title, logo }) {
   return (
     <div className="relative box-border flex w-full items-center justify-between p-6 font-semibold">
       <div className="float-left box-border flex w-full items-center">
-        {logo && <Image src={logo} alt="logo" width="40" height="40" />}
+        {logo && (
+          <Image
+            src={logo}
+            alt="logo"
+            width="40"
+            height="40"
+            className="rounded-full"
+          />
+        )}
         <h2 className="bg-gradient-to-r from-teal-600 to-teal-400 bg-clip-text px-3 text-xl font-bold text-transparent">
           {title}
         </h2>

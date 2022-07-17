@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Card from "@/components/Card";
 import { PageSeo } from "@/components/SEO";
-import raf from "@/assets/logo-r.svg";
+import raf from "@/assets/logo-bg.svg";
 import client from "@/graphcms/client";
 import QUERY from "@/graphcms/query";
 
