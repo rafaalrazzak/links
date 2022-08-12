@@ -2,7 +2,7 @@ export default function Form({ onSubmit, title, children, disabled }) {
   return (
     <div className="w-full">
       <form className="flex flex-col gap-2" onSubmit={onSubmit}>
-        <h1 className="text-sm text-primary-700 dark:text-primary-100">
+        <h1 className="text-sm text-primary-700 font-semibold dark:text-primary-100">
           {title}
         </h1>
 
