@@ -28,13 +28,15 @@ export default function Card({ link, i, title, subtitle, cover }) {
               custom={i}
               variants={variants}
             >
-              <Image
-                className="w-full rounded-lg object-cover"
-                width={350}
-                height={120}
-                src={cover}
-                alt={title}
-              />
+              {cover && (
+                <Image
+                  className="w-full rounded-lg object-cover"
+                  width={350}
+                  height={120}
+                  src={cover}
+                  alt={title}
+                />
+              )}
               <div className="mt-1">
                 <h2 className="text-md font-semibold transition-all">
                   {title}
