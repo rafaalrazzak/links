@@ -24,5 +24,5 @@ export async function getServerSideProps(ctx) {
 }
 
 export default function Reditect() {
-  return <></>;
+  return;
 }
