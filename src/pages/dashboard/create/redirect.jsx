@@ -27,11 +27,12 @@ export default function CreateRedirect() {
           url,
         },
       });
-
-      toast.success("Url has been shorter");
-      setResult(baseUrl + name);
-      setName("");
-      setUrl("");
+      if (!error) {
+        toast.success("Url has been shorter");
+        setResult(baseUrl + name);
+        setName("");
+        setUrl("");
+      }
       if (loading) {
         setIsLoading(true);
       }
