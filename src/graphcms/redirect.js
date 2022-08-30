@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 const REDIRECT = gql`
   {
-    redirects {
+    redirects(orderBy: publishedAt_DESC) {
       name
       url
       id
