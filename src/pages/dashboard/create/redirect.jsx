@@ -40,7 +40,6 @@ export default function CreateRedirect() {
         setIsLoading(true);
       }
     } catch (error) {
-      console.log(encodeUrl);
       toast.error(`\"${name}\" already exists`);
     }
   };
