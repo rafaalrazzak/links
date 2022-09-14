@@ -8,12 +8,12 @@ export async function getServerSideProps(ctx) {
   });
   const { redirects } = data;
   let redirectUrl;
-  console.log(redirects);
   redirects.find(({ name, url }) => {
     if (name === redirect) {
       redirectUrl = url;
     }
   });
+
   return {
     redirect: {
       destination: redirectUrl ? redirectUrl : "/",

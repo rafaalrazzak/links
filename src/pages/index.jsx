@@ -16,7 +16,7 @@ export async function getServerSideProps(ctx) {
   if (clientUrl) {
     return {
       redirect: {
-        destination: clientUrl,
+        destination: decodeURIComponent(clientUrl),
         permanent: true,
       },
     };
@@ -43,7 +43,7 @@ export default function Home({ urls }) {
               i={i}
               title={item.title}
               subtitle={item.description}
-              link={item.url}
+              link={encodeURIComponent(item.url)}
               cover={item.thumbnail.url}
               cW={item.thumbnail.width}
               cH={item.thumbnail.height}
