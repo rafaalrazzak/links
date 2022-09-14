@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import client from "@/graphcms/client";
 import REDIRECT from "@/graphcms/redirect";
 
@@ -10,6 +8,7 @@ export async function getServerSideProps(ctx) {
   });
   const { redirects } = data;
   let redirectUrl;
+  console.log(redirects);
   redirects.find(({ name, url }) => {
     if (name === redirect) {
       redirectUrl = url;

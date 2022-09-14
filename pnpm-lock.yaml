@@ -2,9 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   '@apollo/client': ^3.6.9
-  autoprefixer: ^10.4.8
+  autoprefixer: ^10.4.10
   clsx: ^1.2.1
-  framer-motion: ^7.3.2
+  framer-motion: ^7.3.4
   graphql: ^16.6.0
   next: ^12.3.0
   postcss: ^8.4.16
@@ -13,23 +13,23 @@ specifiers:
   react: ^18.2.0
   react-copy-to-clipboard: ^5.1.0
   react-dom: ^18.2.0
-  react-hot-toast: ^2.3.0
+  react-hot-toast: ^2.4.0
   react-icons: ^4.4.0
   sharp: ^0.31.0
   tailwindcss: ^3.1.8
 
 dependencies:
   '@apollo/client': 3.6.9_onqnqwb3ubg5opvemcqf7c2qhy
-  autoprefixer: 10.4.8_postcss@8.4.16
+  autoprefixer: 10.4.10_postcss@8.4.16
   clsx: 1.2.1
-  framer-motion: 7.3.2_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 7.3.4_biqbaboplfbrettd7655fr4n2y
   graphql: 16.6.0
   next: 12.3.0_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.16
   react: 18.2.0
   react-copy-to-clipboard: 5.1.0_react@18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-hot-toast: 2.3.0_biqbaboplfbrettd7655fr4n2y
+  react-hot-toast: 2.4.0_biqbaboplfbrettd7655fr4n2y
   react-icons: 4.4.0_react@18.2.0
   sharp: 0.31.0
   tailwindcss: 3.1.8_postcss@8.4.16
@@ -339,15 +339,15 @@ packages:
     resolution: {integrity: sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==}
     dev: false
 
-  /autoprefixer/10.4.8_postcss@8.4.16:
-    resolution: {integrity: sha512-75Jr6Q/XpTqEf6D2ltS5uMewJIx5irCU1oBYJrWjFenq/m12WRRrz6g15L1EIoYvPLXTbEry7rDOwrcYNj77xw==}
+  /autoprefixer/10.4.10_postcss@8.4.16:
+    resolution: {integrity: sha512-nMaiDARyp1e74c8IeAXkr+BmFKa8By4Zak7tyaNPF09Iu39WFpNXOWrVirmXjKr+5cOyERwvtbMOLYz6iBJYgQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.3
-      caniuse-lite: 1.0.30001393
+      caniuse-lite: 1.0.30001399
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -384,10 +384,10 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001393
-      electron-to-chromium: 1.4.246
+      caniuse-lite: 1.0.30001399
+      electron-to-chromium: 1.4.249
       node-releases: 2.0.6
-      update-browserslist-db: 1.0.7_browserslist@4.21.3
+      update-browserslist-db: 1.0.9_browserslist@4.21.3
     dev: false
 
   /buffer/5.7.1:
@@ -402,8 +402,8 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  /caniuse-lite/1.0.30001393:
-    resolution: {integrity: sha512-N/od11RX+Gsk+1qY/jbPa0R6zJupEa0lxeBG598EbrtblxVCTJsQwbRBm6+V+rxpc5lHKdsXb9RY83cZIPLseA==}
+  /caniuse-lite/1.0.30001399:
+    resolution: {integrity: sha512-4vQ90tMKS+FkvuVWS5/QY1+d805ODxZiKFzsU8o/RsVJz49ZSRR8EjykLJbqhzdPgadbX6wB538wOzle3JniRA==}
     dev: false
 
   /chokidar/3.5.3:
@@ -507,8 +507,8 @@ packages:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
     dev: false
 
-  /electron-to-chromium/1.4.246:
-    resolution: {integrity: sha512-/wFCHUE+Hocqr/LlVGsuKLIw4P2lBWwFIDcNMDpJGzyIysQV4aycpoOitAs32FT94EHKnNqDR/CVZJFbXEufJA==}
+  /electron-to-chromium/1.4.249:
+    resolution: {integrity: sha512-GMCxR3p2HQvIw47A599crTKYZprqihoBL4lDSAUmr7IYekXFK5t/WgEBrGJDCa2HWIZFQEkGuMqPCi05ceYqPQ==}
     dev: false
 
   /end-of-stream/1.4.4:
@@ -527,8 +527,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /fast-glob/3.2.11:
-    resolution: {integrity: sha512-xrO3+1bxSo3ZVHAnqzyuewYT6aMFHRAd4Kcs92MAonjwQZLsK9d0SF1IyQ3k5PoirxTW0Oe/RqFgMQ6TcNE5Ew==}
+  /fast-glob/3.2.12:
+    resolution: {integrity: sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==}
     engines: {node: '>=8.6.0'}
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -555,8 +555,8 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: false
 
-  /framer-motion/7.3.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-BTG0BqJSwxoFBWpwaaxS/954DGZFsluF+dUv9Hfq53VNkwUt5g+wYTEM66oTUhiH/+6R/y0Rq+BmkUBcmzbyMQ==}
+  /framer-motion/7.3.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-TE0qQtrJ0laUb6Gzt+RBbHy7MmS5TrUshhjwWTpZP/MIBQ8HWrgJ6GpNCu6GOYayNVcgbvAWO33tRVEAcw/52w==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -776,7 +776,7 @@ packages:
     dependencies:
       '@next/env': 12.3.0
       '@swc/helpers': 0.4.11
-      caniuse-lite: 1.0.30001393
+      caniuse-lite: 1.0.30001399
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -1043,8 +1043,8 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-hot-toast/2.3.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-/RxV+bfjld7tSJR1SCLzMAXgFuNW7fCpK6+vbYqfmbGSWcqTMz2rizrvfWKvtcPH5HK0NqxmBaC5SrAy1F42zA==}
+  /react-hot-toast/2.4.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-qnnVbXropKuwUpriVVosgo8QrB+IaPJCpL8oBI6Ov84uvHZ5QQcTp2qg6ku2wNfgJl6rlQXJIQU5q+5lmPOutA==}
     engines: {node: '>=10'}
     peerDependencies:
       react: '>=16'
@@ -1231,7 +1231,7 @@ packages:
       detective: 5.2.1
       didyoumean: 1.2.2
       dlv: 1.1.3
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       glob-parent: 6.0.2
       is-glob: 4.0.3
       lilconfig: 2.0.6
@@ -1299,8 +1299,8 @@ packages:
       safe-buffer: 5.2.1
     dev: false
 
-  /update-browserslist-db/1.0.7_browserslist@4.21.3:
-    resolution: {integrity: sha512-iN/XYesmZ2RmmWAiI4Z5rq0YqSiv0brj9Ce9CfhNE4xIW2h+MFxcgkxIzZ+ShkFPUkjU3gQ+3oypadD3RAMtrg==}
+  /update-browserslist-db/1.0.9_browserslist@4.21.3:
+    resolution: {integrity: sha512-/xsqn21EGVdXI3EXSum1Yckj3ZVZugqyOZQ/CxYPBD/R+ko9NSUScf8tFF4dOKY+2pvSSJA/S+5B8s4Zr4kyvg==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
