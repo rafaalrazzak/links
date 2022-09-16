@@ -22,7 +22,7 @@ export default function Card({ link, i, title, subtitle, cover }) {
       <div className="flex w-full flex-col md:w-1/2 lg:w-1/3">
         <div className="m-8 rounded-lg p-6 outline outline-primary-400/10 backdrop-blur-xl transition delay-150 duration-300 ease-in-out hover:scale-105 hover:bg-primary-100/50 hover:drop-shadow-sm hover:backdrop-blur-lg dark:bg-primary-700/50 dark:text-primary-200 dark:outline-primary-300/10 dark:backdrop-blur-lg dark:hover:drop-shadow-md">
           <a
-            href={`?r=${encodeURIComponent(link)}`}
+            href={`l?r=${encodeURIComponent(link)}`}
             target="_blank"
             rel="noopener noreferrer"
           >

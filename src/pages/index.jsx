@@ -6,21 +6,11 @@ import client from "@/graphcms/client";
 import QUERY from "@/graphcms/query";
 
 export async function getServerSideProps(ctx) {
-  const clientUrl = ctx.query.r;
   const { data } = await client.query({
     query: QUERY,
   });
 
   const { urls } = data;
-
-  if (clientUrl) {
-    return {
-      redirect: {
-        destination: decodeURIComponent(clientUrl),
-        permanent: true,
-      },
-    };
-  }
 
   return {
     props: { urls },
@@ -43,7 +33,7 @@ export default function Home({ urls }) {
               i={i}
               title={item.title}
               subtitle={item.description}
-              link={encodeURIComponent(item.url)}
+              link={item.url}
               cover={item.thumbnail.url}
               cW={item.thumbnail.width}
               cH={item.thumbnail.height}
