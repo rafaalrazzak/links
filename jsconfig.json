@@ -6,7 +6,7 @@
       "@/css/*": ["src/css/*"],
       "@/assets/*": ["src/assets/*"],
       "@/data/*": ["src/data/*"],
-      "@/lib/*": ["src/lib/*"],
+      "@/libs/*": ["src/libs/*"],
       "@/graphcms/*": ["src/graphcms/*"]
     }
   }

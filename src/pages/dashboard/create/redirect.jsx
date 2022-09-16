@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { FaRandom } from "react-icons/fa";
 import { MdContentCopy } from "react-icons/md";
 import { HiExternalLink } from "react-icons/hi";
+import Link from "next/link";
 import { useMutation } from "@apollo/client";
+import REDIRECT from "@/graphcms/mutation/redirect";
 import Layout from "@/components/Layout";
 import { PageSeo } from "@/components/SEO";
 import Form from "@/components/Form";
 import Input from "@/components/Input";
-import REDIRECT from "@/graphcms/mutation/redirect";
-import Link from "next/link";
+import randomString from "@/libs/utils/randomString";
 
 export default function CreateRedirect() {
   const [name, setName] = useState("");
@@ -19,12 +21,13 @@ export default function CreateRedirect() {
   const [createRedirect, { data, error, loading }] = useMutation(REDIRECT);
   const baseUrl = "https://l.rafaar.me/";
   const handleSubmit = async (e) => {
+    const encodeUrl = encodeURIComponent(url);
     e.preventDefault();
     try {
       await createRedirect({
         variables: {
           name,
-          url,
+          url: encodeUrl,
         },
       });
       if (!error) {
@@ -56,6 +59,14 @@ export default function CreateRedirect() {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
+          <button
+            onClick={() => setName(randomString())}
+            className="transition-color my-2 flex w-full flex-row items-center justify-center space-x-1 rounded-lg border border-primary-400/20 bg-primary-300/50 py-2 text-sm font-semibold text-primary-700 shadow-sm duration-300 ease-out disabled:cursor-not-allowed disabled:opacity-50 dark:border-primary-700/20 dark:bg-primary-800/50 dark:text-primary-100"
+            type="button"
+          >
+            Random
+            <FaRandom className="mx-1 text-lg" />
+          </button>
           <Input
             required
             type="url"
@@ -66,13 +77,13 @@ export default function CreateRedirect() {
           />
         </Form>
         {result && (
-          <div className="flex w-full items-center gap-x-2 rounded-lg bg-primary-200/50 px-4 py-2 text-sm text-teal-500">
+          <div className="flex w-full items-center justify-between gap-x-2 rounded-lg bg-primary-200/50 px-4 py-2 text-sm text-teal-500">
             <Link href={result}>
               <a className="rounded-lg bg-primary-200 p-2">
                 <HiExternalLink />
               </a>
             </Link>
-            <span className="flex-1">{result}</span>
+            <span className="flex truncate">{result}</span>
             <CopyToClipboard
               text={result}
               onCopy={() => {
