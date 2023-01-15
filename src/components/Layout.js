@@ -8,10 +8,8 @@ export default function Layout({ children, headTitle, headLogo }) {
       <Header title={headTitle} logo={headLogo} />
       <Bg />
       <Toaster />
-      <div className="mx-auto flex flex-wrap items-center">{children}</div>
-      <div className="flex-end fixed inset-x-0 bottom-0 flex justify-center">
+      <div className="mx-auto flex flex-wrap items-center justify-center">{children}</div>
         <Footer />
-      </div>
     </div>
   );
 }
