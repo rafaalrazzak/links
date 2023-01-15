@@ -5,7 +5,7 @@ import MoonIcon from "@/components/Icons/MoonIcon";
 import Image from "next/image";
 
 export default function Header({title, logo}){
-  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     if(theme === "dark"){
