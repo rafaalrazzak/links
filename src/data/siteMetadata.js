@@ -4,4 +4,4 @@ const siteMetadata = {
   socialBanner: "/socialBanner.png",
 };
 
-module.exports = siteMetadata;
+export default siteMetadata;
