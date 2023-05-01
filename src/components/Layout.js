@@ -4,12 +4,12 @@ import Footer from "@/components/Footer";
 import Bg from "@/components/Bg";
 export default function Layout({ children, headTitle, headLogo }) {
   return (
-    <div className="lg:mx-24">
+    <div className="mx-auto max-w-md h-screen  px-4 items-center justify-center">
       <Header title={headTitle} logo={headLogo} />
       <Bg />
       <Toaster />
-      <div className="mx-auto flex flex-wrap items-center justify-center">{children}</div>
-        <Footer />
+      <div>{children}</div>
+      <Footer />
     </div>
   );
 }

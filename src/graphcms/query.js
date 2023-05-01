@@ -7,11 +7,7 @@ const QUERY = gql`
       title
       description
       url
-      thumbnail {
-        url
-        width
-        height
-      }
+      icon
     }
   }
 `;
