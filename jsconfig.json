@@ -2,27 +2,13 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@/components/*": [
-        "components/*"
-      ],
-      "@/css/*": [
-        "css/*"
-      ],
-      "@/assets/*": [
-        "assets/*"
-      ],
-      "@/data/*": [
-        "data/*"
-      ],
-      "@/libs/*": [
-        "libs/*"
-      ],
-      "@/graphcms/*": [
-        "graphcms/*"
-      ],
-      "@/context/*": [
-        "context/*"
-      ]
+      "@/components/*": ["components/*"],
+      "@/css/*": ["css/*"],
+      "@/assets/*": ["assets/*"],
+      "@/data/*": ["data/*"],
+      "@/libs/*": ["libs/*"],
+      "@/graphcms/*": ["graphcms/*"],
+      "@/context/*": ["context/*"]
     }
   }
 }
