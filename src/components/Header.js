@@ -20,7 +20,7 @@ export default function Header({ title, logo }) {
   const handleSwitchTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
   return (
-    <div className="sticky top-0 z-50  items-center justify-between py-4 font-semibold ">
+    <div className="sticky top-0 z-50 w-full items-center justify-between py-4 font-semibold ">
       <div className="flex flex-1 items-center justify-between rounded-2xl bg-primary-100/40 p-3 outline outline-1 outline-primary-300 backdrop-blur-xl dark:bg-primary-800/40 dark:outline-primary-800">
         {logo && (
           <Image

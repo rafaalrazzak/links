@@ -29,7 +29,6 @@ export async function getServerSideProps(ctx) {
 }
 
 export default function Home({ urls }) {
-  console.log(urls);
 
   return (
     <div className="relative">
