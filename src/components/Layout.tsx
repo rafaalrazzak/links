@@ -20,6 +20,6 @@ function Layout({ children, headTitle, headLogo }: LayoutProps) {
       <Footer />
     </div>
   );
-};
+}
 
 export default Layout;
