@@ -1,13 +1,10 @@
 import "@/css/globals.css";
 
 import { Metadata } from "next";
-import { loadErrorMessages, loadDevMessages } from "@apollo/client/dev";
+import { Analytics } from "@vercel/analytics/react";
 
 import { siteMetadata } from "@/data/siteMetadata";
 import Layout from "@/components/Layout";
-
-import { Provider } from "./Provider";
-
 export const metadata: Metadata = {
   title: siteMetadata.title,
   description: siteMetadata.description,
@@ -41,19 +38,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  if (true) {
-    // Adds messages only in a dev environment
-    loadDevMessages();
-    loadErrorMessages();
-  }
-
   return (
     <html lang="en">
       <body>
-        {/* <Provider> */}
         <Layout>{children}</Layout>
-        {/* </Provider> */}
       </body>
+      <Analytics />
     </html>
   );
 }
