@@ -79,7 +79,7 @@ export default function CreateRedirect() {
         {result && (
           <div className="flex w-full items-center justify-between gap-x-2 rounded-lg bg-primary-200/50 px-4 py-2 text-sm text-teal-500">
             <Link href={result} className="rounded-lg bg-primary-200 p-2">
-                <HiExternalLink />
+              <HiExternalLink />
             </Link>
             <span className="flex truncate">{result}</span>
             <CopyToClipboard

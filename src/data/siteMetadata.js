@@ -1,7 +1,8 @@
-const siteMetadata = {
-  language: "en-us",
-  siteUrl: "https://l.rafaar.me",
+export const siteMetadata = {
+  title: "Links - by raf",
+  description: "a simple website for any social media link",
+  language: "id-ID",
+  siteUrl: "https://l.rafaar.my.id",
+  icon: "/favicon.ico",
   socialBanner: "/socialBanner.png",
 };
-
-export default siteMetadata;

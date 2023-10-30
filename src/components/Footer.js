@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className="flex flex-end justify-center">
-      <div className="my-4 text-center text-primary-600  dark:text-primary-200 ">
+      <div className="my-4 text-center  text-primary-200 ">
         <p className="text-sm">
           Made with <span className="text-[#db2929]">❤️ </span>
           by{" "}

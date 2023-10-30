@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -22,10 +24,10 @@ export default function Card({ link, i, title, subtitle, icon }) {
 
   return (
     <Link
-      href={`?r=${encodeURIComponent(link)}`}
+      href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex items-center rounded-2xl bg-primary-100/40  p-3 outline outline-1 outline-primary-300 backdrop-blur-xl dark:bg-primary-800/40 dark:text-white dark:outline-primary-800"
+      className="group flex w-full items-center rounded-2xl  p-3 outline outline-1  backdrop-blur-xl  bg-primary-800/40  text-white  outline-primary-800"
     >
       <motion.div
         initial="hidden"
@@ -35,7 +37,7 @@ export default function Card({ link, i, title, subtitle, icon }) {
         className="flex flex-1 items-center justify-between gap-2 "
       >
         {icon && (
-          <div className="rounded-full border bg-gradient-to-br from-primary-100 to-primary-200 p-2 dark:border-primary-700 dark:from-primary-700 dark:to-primary-800 ">
+          <div className="rounded-full border bg-gradient-to-br  p-2  border-primary-700  from-primary-700  to-primary-800 ">
             <RiIcons icon={icon} className="h-5 w-5" />
           </div>
         )}

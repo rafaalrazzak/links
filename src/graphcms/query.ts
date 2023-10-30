@@ -8,6 +8,7 @@ const QUERY = gql`
       description
       url
       icon
+      type
     }
   }
 `;
