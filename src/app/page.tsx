@@ -36,7 +36,7 @@ export default async function Page() {
             . Passionate about crafting modern web applications.
           </p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           {socialLinks.map((props) => (
             <CardSocial key={props.id} {...props} />
           ))}
