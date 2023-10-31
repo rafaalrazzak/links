@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
   color: #fff;
+  background: #000;
 }
 
 @layer utilities {

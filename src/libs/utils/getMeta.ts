@@ -1,6 +1,6 @@
 import { validateURL } from "../helpers";
 
-export async function getMeta(url) {
+export async function getMeta(url: string) {
   const { isValid } = validateURL(url);
   if (isValid) {
     const res = await fetch(

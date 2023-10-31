@@ -1,4 +1,4 @@
-export const validateURL = (url) => {
+export const validateURL = (url: string) => {
   let isValid = true;
   let error = "";
   if (url) {

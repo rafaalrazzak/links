@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
 import { siteMetadata } from "@/data/siteMetadata";
-import Layout from "@/components/Layout";
+import { Layout } from "@/components/Layout";
 export const metadata: Metadata = {
   title: siteMetadata.title,
   description: siteMetadata.description,
