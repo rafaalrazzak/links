@@ -10,6 +10,8 @@ function filterItemsByType(items: Link[], type: string) {
   return items.filter((item) => item.type === type);
 }
 
+export const revalidate = 180;
+
 export default async function Page() {
   const {
     data: { urls },
