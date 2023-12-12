@@ -4,18 +4,16 @@ import logo from "@/assets/logo-bg.svg";
 
 export function Header() {
   return (
-    <div className="relative mt-4">
+    <div className="relative -mx-4 -mt-4 sm:mx-0 sm:mt-0 ">
       <img
-        className="h-48 w-screen object-cover rounded-2xl"
-        src="https://storage-dev.tako.id/creator/03bbb553-ceff-4909-9ac9-6c4872d0f720/banner.png?ref=p5cc_17364.png"
+        className=" object-cover sm:rounded-2xl"
+        src="https://pbs.twimg.com/profile_banners/868649772596330497/1670133956/1500x500"
       />
 
-      <Image
-        src={logo}
+      <img
+        src={logo.src}
         alt="logo"
-        width="100"
-        height="100"
-        className="rounded-full border-4 border-black absolute -bottom-8 left-4"
+        className="w-16 h-16 lg:w-[80px] lg:h-[80px] rounded-full border-4 border-black absolute -bottom-10 md:-bottom-6 lg:-bottom-8 left-4"
       />
     </div>
   );

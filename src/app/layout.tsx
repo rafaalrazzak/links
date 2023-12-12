@@ -2,9 +2,10 @@ import "@/css/globals.css";
 
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
+import clsx from "clsx";
 
 import { siteMetadata } from "@/data/siteMetadata";
+import { Analytics } from "@/components/Analytics";
 import { Layout } from "@/components/Layout";
 
 export const metadata: Metadata = {
@@ -44,7 +45,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={clsx(
+          "mx-auto flex h-screen max-w-xl flex-col items-center justify-around p-4 gap-12 md:gap-8",
+          inter.className,
+        )}
+      >
         <Layout>{children}</Layout>
       </body>
       <Analytics />
