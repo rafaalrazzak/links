@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  color: #fff;
+  background: #000;
+}
+
 @layer utilities {
   .animation-delay-2000 {
     animation-delay: 2s;
@@ -8,4 +15,8 @@
   .animation-delay-4000 {
     animation-delay: 4s;
   }
+}
+
+.beams {
+  background-image: url("/bg/hero-dark@90.jpg");
 }
