@@ -4,5 +4,5 @@ export const siteMetadata = {
   language: "id-ID",
   siteUrl: "https://l.rafaar.my.id",
   icon: "/favicon.ico",
-  socialBanner: "https://l.rafaar.net/banner",
+  socialBanner: "https://l.rafaar.my.id/banner",
 };
