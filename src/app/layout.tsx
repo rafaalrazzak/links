@@ -6,7 +6,9 @@ import clsx from "clsx";
 
 import { siteMetadata } from "@/data/siteMetadata";
 import { Analytics } from "@/components/Analytics";
-import { Layout } from "@/components/Layout";
+import { Header } from "@/components/Header";
+import { Toaster } from "react-hot-toast";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: siteMetadata.title,
@@ -47,11 +49,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={clsx(
-          "mx-auto flex h-screen max-w-xl flex-col items-center justify-around p-4 gap-12 md:gap-8",
+          "mx-auto flex min-h-screen max-w-xl flex-col items-center p-4 gap-12 md:gap-8 ",
           inter.className,
         )}
       >
-        <Layout>{children}</Layout>
+        <Header />
+        <Toaster />
+        {children}
+        <Footer />
       </body>
       <Analytics />
     </html>

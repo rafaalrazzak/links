@@ -3,7 +3,7 @@ import { redirect as NextRedirect } from "next/navigation";
 import { getClient } from "@/graphcms/client";
 import { SINGLE } from "@/graphcms/redirect";
 
-export const revalidate = 30;
+export const dynamic = "force-dynamic";
 
 export default async function RedirectPage({
   params: { redirect },
