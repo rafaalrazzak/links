@@ -2,13 +2,7 @@ import Image from "next/image";
 
 import logo from "@/assets/logo-bg.svg";
 
-export function Header({
-  avatar = logo,
-  cover,
-}: {
-  cover: string;
-  avatar?: boolean;
-}) {
+export function Header({ avatar, cover }: { cover: string; avatar?: boolean }) {
   return (
     <div className="relative -mx-4 -mt-4 sm:mx-0 sm:mt-0">
       <Image

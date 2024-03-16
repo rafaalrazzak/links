@@ -2,12 +2,11 @@ import "@/css/globals.css";
 
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 import clsx from "clsx";
 
 import { siteMetadata } from "@/data/siteMetadata";
 import { Analytics } from "@/components/Analytics";
-import { Header } from "@/components/Header";
-import { Toaster } from "react-hot-toast";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -53,10 +52,6 @@ export default function RootLayout({
           inter.className,
         )}
       >
-        <Header
-          cover={"https://cdn.kita.blue/rafaar%2Fheader-cover.jpg"}
-          avatar
-        />
         <Toaster />
         {children}
         <Footer />
