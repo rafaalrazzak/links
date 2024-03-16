@@ -8,31 +8,32 @@ import { siteMetadata } from "@/data/siteMetadata";
 import { Analytics } from "@/components/Analytics";
 import { Header } from "@/components/Header";
 import { Toaster } from "react-hot-toast";
-import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: siteMetadata.title,
-  description: siteMetadata.description,
+  title: "Ramadhan Reflection",
+  description:
+    "Ramadhan Reflection merujuk pada kegiatan memikirkan kembali atau merefleksi pengalaman",
   openGraph: {
     type: "website",
     locale: siteMetadata.language,
     url: siteMetadata.siteUrl,
-    title: siteMetadata.title,
-    description: siteMetadata.description,
+    title: "Ramadhan Reflection",
+    description:
+      "Ramadhan Reflection merujuk pada kegiatan memikirkan kembali atau merefleksi pengalaman",
     images: [
       {
-        url: siteMetadata.socialBanner,
+        url: "https://cdn.kita.blue/rafaar/rr.png",
         width: 1200,
       },
     ],
   },
   icons: [
     {
-      url: siteMetadata.icon,
+      url: "https://cdn.kita.blue/rafaar/rr-logo.png",
       rel: "icon",
     },
     {
-      url: siteMetadata.icon,
+      url: "https://cdn.kita.blue/rafaar/rr-logo.png",
       rel: "shortcut icon",
     },
   ],
@@ -53,13 +54,9 @@ export default function RootLayout({
           inter.className,
         )}
       >
-        <Header
-          cover={"https://cdn.kita.blue/rafaar%2Fheader-cover.jpg"}
-          avatar
-        />
+        <Header cover="https://cdn.kita.blue/rafaar/rr.png" />
         <Toaster />
         {children}
-        <Footer />
       </body>
       <Analytics />
     </html>
