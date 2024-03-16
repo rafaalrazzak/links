@@ -5,14 +5,14 @@ const socials = [
     id: 1,
     title: "Instagram",
     description: "@ramadhan.reflection",
-    url: "https://instagram.com/ramadhan.reflection",
+    url: "https://www.instagram.com/ramadhan.reflection",
     icon: "RiInstagramFill",
   },
   {
     id: 2,
     title: "Tiktok",
     description: "@ramadhan.reflection",
-    url: "https://tiktok.com/ramadhan.reflection",
+    url: "https://www.tiktok.com/@ramadhan.reflection",
     icon: "RiTiktokFill",
   },
 ];
