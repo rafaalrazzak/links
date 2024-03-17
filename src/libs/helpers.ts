@@ -1,5 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import { format } from "date-fns";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -37,21 +38,11 @@ export const validateURL = (url: string) => {
 };
 
 export function formatDate(date: string | Date) {
-  // Check if date is valid
-  if (!(date instanceof Date)) {
-    throw new Error(`Invalid date: ${date}`);
-  }
+  // Parse the date if it's in string format
+  const parsedDate = typeof date === "string" ? new Date(date) : date;
 
-  // Options for formatting the date
-  const options = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    weekday: "short",
-    hour: "numeric",
-    minute: "numeric",
-  };
-
-  // Format the date with locale id-ID
-  return new Intl.DateTimeFormat("id-ID", options).format(new Date(date));
+  // Format the date
+  return format(parsedDate, "eeee, d MMMM yyyy, HH:mm", {
+    locale: require("date-fns/locale/id"),
+  });
 }
