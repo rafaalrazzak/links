@@ -18,7 +18,6 @@ const sortedTimelines = [...timelines].sort((a, b) => {
     return diffA - diffB;
 });
 
-This way, we're using the spread operator `[...timelines]` to create a shallow copy of the `timelines` array before sorting, ensuring that the original array remains intact.
   function isToday(date) {
     const today = new Date();
     return (
