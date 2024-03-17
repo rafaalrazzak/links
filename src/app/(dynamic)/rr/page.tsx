@@ -7,8 +7,12 @@ export default function RR() {
 
   // Sort timelines based on the closest date to today
   const sortedTimelines = timelines.slice().sort((a, b) => {
-    const diffA = Math.abs(today - new Date(a.date.start).getTime());
-    const diffB = Math.abs(today - new Date(b.date.start).getTime());
+    const diffA = Math.abs(
+      today - new Date(a.date["start"] ? a.date["start"] : a.date).getTime(),
+    );
+    const diffB = Math.abs(
+      today - new Date(b.date["start"] ? b.date["start"] : b.date).getTime(),
+    );
     return diffA - diffB;
   });
 
@@ -82,7 +86,7 @@ export default function RR() {
                     ? `${formatDate(date["start"])} - ${formatDate(date["end"])}`
                     : formatDate(date)}
                 </span>
-          <span>{place}</span>
+                <span>{place}</span>
               </div>
             </div>
           );
