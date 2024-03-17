@@ -29,7 +29,7 @@ const timelines = [
     title: "Sanlat Remaja",
     place: "Masjid Al-Huda PC Persis Citeureup",
     date: {
-      start: new Date("March 23, 2024 15:00:00"),
+      start: new Date("March 23, 2024 19:00:00"),
       end: new Date("March 24, 2024 11:30:00"),
     },
   },
