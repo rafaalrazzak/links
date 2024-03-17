@@ -50,6 +50,9 @@ dependencies:
   sharp:
     specifier: ^0.33.2
     version: 0.33.2
+  tailwind-merge:
+    specifier: ^2.2.2
+    version: 2.2.2
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.1
@@ -162,7 +165,6 @@ packages:
     engines: { node: ">=6.9.0" }
     dependencies:
       regenerator-runtime: 0.14.1
-    dev: true
 
   /@emnapi/runtime@0.45.0:
     resolution:
@@ -3960,7 +3962,6 @@ packages:
       {
         integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==,
       }
-    dev: true
 
   /regexp.prototype.flags@1.5.2:
     resolution:
@@ -4430,6 +4431,15 @@ packages:
         integrity: sha512-b19dMThMV4HVFynSAM1++gBHAbk2Tc/osgLIBZMKsyqh34jb2e8Os7T6ZW/Bt3pJFdBTd2JwAnAAEQV7rSNvcQ==,
       }
     engines: { node: ">=0.10" }
+    dev: false
+
+  /tailwind-merge@2.2.2:
+    resolution:
+      {
+        integrity: sha512-tWANXsnmJzgw6mQ07nE3aCDkCK4QdT3ThPMCzawoYA2Pws7vSTCvz3Vrjg61jVUGfFZPJzxEP+NimbcW+EdaDw==,
+      }
+    dependencies:
+      "@babel/runtime": 7.24.0
     dev: false
 
   /tailwindcss@3.4.1:
