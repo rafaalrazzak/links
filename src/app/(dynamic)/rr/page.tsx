@@ -2,6 +2,8 @@ import { Card } from "@/components/Card";
 import { routines, timelines, socials } from "@/data/rr";
 import { formatDate, cn } from "@/libs/helpers";
 
+export const dynamic = "force-dynamic"
+
 export default function RR() {
   const today = new Date().getTime();
 
