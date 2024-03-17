@@ -21,7 +21,7 @@ type CardProps = {
 
 type CardSocialProps = BaseCardProps;
 
-const variants = {
+export const variants = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,

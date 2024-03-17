@@ -1,3 +1,12 @@
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+import { format } from "date-fns";
+import { id } from "date-fns/locale";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
 export const validateURL = (url: string) => {
   let isValid = true;
   let error = "";
@@ -28,3 +37,11 @@ export const validateURL = (url: string) => {
     error,
   };
 };
+
+export function formatDate(date: string | Date) {
+
+  // Format the date
+  return format(date, "eeee, d MMMM yyyy, HH:mm", {
+    locale: id,
+  });
+}
