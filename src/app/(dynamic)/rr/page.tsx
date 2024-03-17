@@ -10,7 +10,7 @@ export default function RR() {
   
   // Sort timelines based on the closest date to today
   
-const sortedTimelines = [...timelines].sort((a, b) => {
+  const sortedTimelines = [...timelines].sort((a, b) => {
     const dateA = new Date(a.date["start"] || a.date).getTime();
     const dateB = new Date(b.date["start"] || b.date).getTime();
     const diffA = Math.abs(today - dateA);
