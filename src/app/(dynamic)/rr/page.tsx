@@ -4,20 +4,21 @@ import { formatDate, cn } from "@/libs/helpers";
 
 export const dynamic = "force-dynamic"
 
+const today = new Date().getTime();
+
 export default function RR() {
-  const today = new Date().getTime();
-
+  
   // Sort timelines based on the closest date to today
-  const sortedTimelines = timelines.slice().sort((a, b) => {
-    const diffA = Math.abs(
-      today - new Date(a.date["start"] ? a.date["start"] : a.date).getTime(),
-    );
-    const diffB = Math.abs(
-      today - new Date(b.date["start"] ? b.date["start"] : b.date).getTime(),
-    );
+  
+const sortedTimelines = [...timelines].sort((a, b) => {
+    const dateA = new Date(a.date["start"] || a.date).getTime();
+    const dateB = new Date(b.date["start"] || b.date).getTime();
+    const diffA = Math.abs(today - dateA);
+    const diffB = Math.abs(today - dateB);
     return diffA - diffB;
-  });
+});
 
+This way, we're using the spread operator `[...timelines]` to create a shallow copy of the `timelines` array before sorting, ensuring that the original array remains intact.
   function isToday(date) {
     const today = new Date();
     return (
