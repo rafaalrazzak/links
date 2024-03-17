@@ -30,7 +30,9 @@ export default function RR() {
       <section className="flex flex-col gap-3">
         <div className="flex flex-col gap-1">
           <h1 className="font-bold text-xl">Ramadhan Reflection</h1>
-          <p className="text-sm font-bold">#SadarPenuhHadirUtuh</p>
+          <p className="text-sm font-bold text-[#2f65b0]">
+            #SadarPenuhHadirUtuh
+          </p>
         </div>
       </section>
       {socials.map((item, i) => (
@@ -59,7 +61,7 @@ export default function RR() {
               key={i}
               className={cn(
                 "flex flex-col flex-1 justify-between gap-4 bg-black rounded-2xl p-3 border border-white/20",
-                { "bg-[#2f65b0]": isClosestToToday },
+                { "bg-[#2f65b0]": isClosestToToday }
               )}
             >
               <div className="flex flex-col gap-1">
