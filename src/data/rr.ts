@@ -19,7 +19,7 @@ const timelines = [
   },
   {
     title: "Sanlat Anak",
-    place: "SMP Plus MABDAUL Huda",
+    place: "SMP Plus Mabdaul Huda",
     date: {
       start: new Date("March 18, 2024 14:30:00"),
       end: new Date("March 22, 2024 18:30:00"),
