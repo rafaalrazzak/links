@@ -33,8 +33,8 @@ export default function RR() {
           <p className="text-sm font-bold">#SadarPenuhHadirUtuh</p>
         </div>
       </section>
-      {socials.map((item) => (
-        <Card key={item.id} {...item} />
+      {socials.map((item, i) => (
+        <Card i={i} key={item.id} {...item} />
       ))}
 
       <section className="flex flex-col gap-3">
@@ -83,8 +83,8 @@ export default function RR() {
               >
                 <span>
                   {date["start"]
-                    ? `${formatDate(date["start"])} - ${formatDate(date["end"])}`
-                    : formatDate(date)}
+                    ? `${formatDate(date["start"]).toString()} - ${formatDate(date["end"]).toString()}`
+                    : formatDate(date as Date)}
                 </span>
                 <span>{place}</span>
               </div>
