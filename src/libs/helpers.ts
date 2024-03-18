@@ -39,7 +39,6 @@ export const validateURL = (url: string) => {
 };
 
 export function formatDate(date: string | Date) {
-
   // Format the date
   return format(date, "eeee, d MMMM yyyy, HH:mm", {
     locale: id,
