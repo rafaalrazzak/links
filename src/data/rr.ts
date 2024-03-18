@@ -19,9 +19,9 @@ const timelines = [
   },
   {
     title: "Sanlat Anak",
-    place: "Masjid Al-Huda PC Persis Citeureup",
+    place: "SMP Plus Mabdaul Huda",
     date: {
-      start: new Date("March 18, 2024 15:00:00"),
+      start: new Date("March 18, 2024 14:30:00"),
       end: new Date("March 22, 2024 18:30:00"),
     },
   },
@@ -29,7 +29,7 @@ const timelines = [
     title: "Sanlat Remaja",
     place: "Masjid Al-Huda PC Persis Citeureup",
     date: {
-      start: new Date("March 23, 2024 18:30:00"),
+      start: new Date("March 23, 2024 19:00:00"),
       end: new Date("March 24, 2024 11:30:00"),
     },
   },

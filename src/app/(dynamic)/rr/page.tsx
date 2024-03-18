@@ -2,6 +2,8 @@ import { Card } from "@/components/Card";
 import { routines, timelines, socials } from "@/data/rr";
 import { formatDate, cn } from "@/libs/helpers";
 
+export const dynamic = "force-dynamic"
+
 export default function RR() {
   const today = new Date();
 
@@ -21,7 +23,7 @@ export default function RR() {
 
     return isPastA ? 1 : isPastB ? -1 : diffA - diffB;
   });
-
+  
   const isToday = (date) => {
     const compareDate = new Date(date);
     return compareDate.toDateString() === today.toDateString();
