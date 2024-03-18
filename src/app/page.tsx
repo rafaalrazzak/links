@@ -28,10 +28,10 @@ export default async function Page() {
         cover={"https://cdn.kita.blue/rafaar%2Fheader-cover.jpg"}
         avatar
       />
-      <main className="flex flex-col gap-8 w-full">
+      <main className="flex w-full flex-col gap-8">
         <section className="flex flex-col gap-3">
           <div className="flex flex-col gap-1">
-            <h1 className="font-bold text-xl">Rafa Al Razzak</h1>
+            <h1 className="text-xl font-bold">Rafa Al Razzak</h1>
             <p className="text-sm">
               Frontend Web Developer with experience in{" "}
               {passions.map((passion, index) => (
@@ -45,7 +45,7 @@ export default async function Page() {
               . Passionate about crafting modern web applications.
             </p>
           </div>
-          <div className="flex gap-4 flex-wrap">
+          <div className="flex flex-wrap gap-4">
             {socialLinks.map((props) => (
               <CardSocial key={props.id} {...props} />
             ))}

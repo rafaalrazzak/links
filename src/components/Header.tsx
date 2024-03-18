@@ -10,7 +10,7 @@ export function Header({ avatar, cover }: { cover: string; avatar?: boolean }) {
         src={cover}
         width={1500}
         height={500}
-        className="object-cover rounded-xl w-full"
+        className="w-full rounded-b-xl object-cover sm:rounded-xl"
       />
 
       {avatar && (
@@ -19,7 +19,7 @@ export function Header({ avatar, cover }: { cover: string; avatar?: boolean }) {
           src={logo.src}
           width={300}
           height={300}
-          className="size-20 lg:w-[80px] lg:h-[80px] rounded-full border-4 border-black absolute -bottom-10 md:-bottom-6 left-4"
+          className="absolute -bottom-10 left-4 size-20 rounded-full border-4 border-black md:-bottom-6 lg:h-[80px] lg:w-[80px]"
         />
       )}
     </div>

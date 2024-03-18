@@ -50,7 +50,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={clsx(
-          "mx-auto flex min-h-screen max-w-xl flex-col items-center p-4 gap-12 md:gap-8 ",
+          "mx-auto flex min-h-screen max-w-xl flex-col items-center gap-12 p-4 md:gap-8 ",
           inter.className,
         )}
       >

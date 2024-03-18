@@ -43,7 +43,7 @@ export function Card({ url, i, title, description, icon }: CardProps) {
       target="_blank"
       rel="noopener noreferrer"
       className={
-        "flex w-full items-center rounded-2xl bg-gradient-to-r from-white/10 via-white/30 to-white/10 p-px text-white animate-border relative before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-rose-100/10 before:to-transparent isolate overflow-hidden shadow-xl shadow-black/5 before:border-t before:border-rose-100/10"
+        "relative isolate flex w-full animate-border items-center overflow-hidden rounded-2xl bg-gradient-to-r from-white/10 via-white/30 to-white/10 p-px text-white shadow-xl shadow-black/5 before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:border-t before:border-rose-100/10 before:bg-gradient-to-r before:from-transparent before:via-rose-100/10 before:to-transparent "
       }
     >
       <motion.div
@@ -51,10 +51,10 @@ export function Card({ url, i, title, description, icon }: CardProps) {
         animate="visible"
         custom={i}
         variants={variants}
-        className="flex flex-1 items-center justify-between gap-2 bg-black rounded-2xl p-3"
+        className="flex flex-1 items-center justify-between gap-2 rounded-2xl bg-black p-3 hover:bg-primary-500/10"
       >
         {icon && (
-          <div className="rounded-full border bg-gradient-to-br  p-2  border-primary-700  from-primary-700  to-primary-800 ">
+          <div className="rounded-full border border-primary-700  bg-gradient-to-br  from-primary-700  to-primary-800  p-2 ">
             <RiIcons icon={icon} className="h-5 w-5" />
           </div>
         )}

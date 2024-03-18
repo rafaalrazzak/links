@@ -2,7 +2,7 @@ import { Card } from "@/components/Card";
 import { routines, timelines, socials } from "@/data/rr";
 import { formatDate, cn } from "@/libs/helpers";
 
-export const dynamic = "force-dynamic"
+export const dynamic = "force-dynamic";
 
 export default function RR() {
   const today = new Date();
@@ -23,17 +23,17 @@ export default function RR() {
 
     return isPastA ? 1 : isPastB ? -1 : diffA - diffB;
   });
-  
+
   const isToday = (date) => {
     const compareDate = new Date(date);
     return compareDate.toDateString() === today.toDateString();
   };
 
   return (
-    <main className="flex flex-col gap-8 w-full">
+    <main className="flex w-full flex-col gap-8">
       <section className="flex flex-col gap-3">
         <div className="flex flex-col gap-1">
-          <h1 className="font-bold text-xl">Ramadhan Reflection</h1>
+          <h1 className="text-xl font-bold">Ramadhan Reflection</h1>
           <p className="text-sm font-bold text-[#2f65b0]">
             #SadarPenuhHadirUtuh
           </p>
@@ -44,11 +44,11 @@ export default function RR() {
       ))}
 
       <section className="flex flex-col gap-3">
-        <h2 className="font-bold text-lg">Jadwal Rutinitas</h2>
+        <h2 className="text-lg font-bold">Jadwal Rutinitas</h2>
         {routines.map(({ title, time }, i) => (
           <div
             key={i}
-            className="flex flex-col flex-1 justify-between gap-2 bg-black rounded-2xl p-3 border border-white/20"
+            className="flex flex-1 flex-col justify-between gap-2 rounded-2xl border border-white/20 bg-black p-3"
           >
             <h1 className="font-semibold">{title}</h1>
             <span className="text-sm text-primary-400">{time}</span>
@@ -57,7 +57,7 @@ export default function RR() {
       </section>
 
       <section className="flex flex-col gap-3">
-        <h2 className="font-bold text-lg">Jadwal Timeline</h2>
+        <h2 className="text-lg font-bold">Jadwal Timeline</h2>
         {sortedTimelines.map(({ title, date, place, theme, speaker }, i) => {
           const isClosestToToday = i === 0;
           const isPast = new Date(date["end"] || date) < new Date();
@@ -66,10 +66,10 @@ export default function RR() {
             <div
               key={i}
               className={cn(
-                "flex flex-col flex-1 justify-between gap-4 bg-black rounded-2xl p-3 border border-white/20",
+                "flex flex-1 flex-col justify-between gap-4 rounded-2xl border border-white/20 bg-black p-3",
                 {
                   "bg-[#2f65b0]": isClosestToToday,
-                  "bg-primary-800 opacity-50 select-none": isPast,
+                  "select-none bg-primary-800 opacity-50": isPast,
                 },
               )}
             >
@@ -77,23 +77,27 @@ export default function RR() {
                 <div className="flex justify-between">
                   <h1 className="font-semibold">{title}</h1>
                   {isToday(date["start"] ? date["start"] : date) && (
-                    <span className="rounded-full text-xs bg-primary-200 text-[#2f65b0] font-bold p-2">
+                    <span className="rounded-full bg-primary-200 p-2 text-xs font-bold text-[#2f65b0]">
                       Hari Ini
                     </span>
                   )}
                   {isPast && (
-                    <span className="rounded-full text-xs bg-gray-600 text-white font-bold p-2">
+                    <span className="rounded-full bg-gray-600 p-2 text-xs font-bold text-white">
                       Usai
                     </span>
                   )}
                 </div>
-                {theme && <span className="font-semibold">{theme}</span>}
+                {theme && (
+                  <span className="text-sm font-semibold text-primary-400">
+                    {theme}
+                  </span>
+                )}
                 {speaker && (
-                  <span className="text-sm text-primary-200">{speaker}</span>
+                  <span className="text-xs text-primary-400">{speaker}</span>
                 )}
               </div>
               <div
-                className={cn("text-sm text-primary-400 flex flex-col gap-1", {
+                className={cn("flex flex-col gap-1 text-sm text-primary-400", {
                   "text-primary-200": isClosestToToday,
                 })}
               >
