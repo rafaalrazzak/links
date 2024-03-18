@@ -4,14 +4,14 @@ const routines = [
     time: "Ba'da Tarawih",
   },
   {
-    title: "Fanatik",
+    title: "Fanatik (Fakta Unik dan Menarik)",
     time: "2x dalam seminggu",
   },
 ];
 
 const timelines = [
   {
-    title: "Jihad Pagi EPS.1",
+    title: "Jihad Pagi Eps.1",
     place: "Masjid Al-Huda PC Persis Citeureup",
     speaker: "Ust. Aam Nurhakim, M.Pd",
     theme: "Agar Ibadah kita bermakna",
@@ -35,14 +35,14 @@ const timelines = [
   },
 
   {
-    title: "Jihad Pagi EPS.2",
+    title: "Jihad Pagi Eps.2",
     place: "Masjid Al-Huda PC Persis Citeureup",
     speaker: "Ust. Daniel Barkah, S.Sy",
     theme: "Powerfull Qur'an",
     date: new Date("March 24, 2024 09:00:00"),
   },
   {
-    title: "Jihad Pagi EPS.3",
+    title: "Jihad Pagi Eps.3 (Khusus Muslimah)",
     place: "Masjid Al-Huda PC Persis Citeureup",
     speaker: "Ustz. Nurhikmah Laely, S.Pd",
     theme: "Mencintai peran Perempuan yang Allah beri",

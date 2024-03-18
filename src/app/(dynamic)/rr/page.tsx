@@ -4,28 +4,30 @@ import { formatDate, cn } from "@/libs/helpers";
 
 export const dynamic = "force-dynamic"
 
-const today = new Date().getTime();
-
 export default function RR() {
-  
-  // Sort timelines based on the closest date to today
-  
-  const sortedTimelines = [...timelines].sort((a, b) => {
-    const dateA = new Date(a.date["start"] || a.date).getTime();
-    const dateB = new Date(b.date["start"] || b.date).getTime();
-    const diffA = Math.abs(today - dateA);
-    const diffB = Math.abs(today - dateB);
-    return diffA - diffB;
-});
+  const today = new Date();
 
-  function isToday(date) {
-    const today = new Date();
-    return (
-      date.getDate() === today.getDate() &&
-      date.getMonth() === today.getMonth() &&
-      date.getFullYear() === today.getFullYear()
-    );
-  }
+  const sortedTimelines = timelines.slice().sort((a, b) => {
+    const dateA = new Date(a.date["start"] || a.date);
+    const dateB = new Date(b.date["start"] || b.date);
+
+    const diffA = Math.abs(today.getTime() - dateA.getTime());
+    const diffB = Math.abs(today.getTime() - dateB.getTime());
+
+    const isPastA = dateA < today;
+    const isPastB = dateB < today;
+
+    if (isPastA && isPastB) {
+      return dateA.getTime() - dateB.getTime();
+    }
+
+    return isPastA ? 1 : isPastB ? -1 : diffA - diffB;
+  });
+  
+  const isToday = (date) => {
+    const compareDate = new Date(date);
+    return compareDate.toDateString() === today.toDateString();
+  };
 
   return (
     <main className="flex flex-col gap-8 w-full">
@@ -58,12 +60,17 @@ export default function RR() {
         <h2 className="font-bold text-lg">Jadwal Timeline</h2>
         {sortedTimelines.map(({ title, date, place, theme, speaker }, i) => {
           const isClosestToToday = i === 0;
+          const isPast = new Date(date["end"] || date) < new Date();
+
           return (
             <div
               key={i}
               className={cn(
                 "flex flex-col flex-1 justify-between gap-4 bg-black rounded-2xl p-3 border border-white/20",
-                { "bg-[#2f65b0]": isClosestToToday }
+                {
+                  "bg-[#2f65b0]": isClosestToToday,
+                  "bg-primary-800 opacity-50 select-none": isPast,
+                },
               )}
             >
               <div className="flex flex-col gap-1">
@@ -72,6 +79,11 @@ export default function RR() {
                   {isToday(date["start"] ? date["start"] : date) && (
                     <span className="rounded-full text-xs bg-primary-200 text-[#2f65b0] font-bold p-2">
                       Hari Ini
+                    </span>
+                  )}
+                  {isPast && (
+                    <span className="rounded-full text-xs bg-gray-600 text-white font-bold p-2">
+                      Usai
                     </span>
                   )}
                 </div>
