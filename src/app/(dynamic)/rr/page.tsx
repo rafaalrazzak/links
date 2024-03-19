@@ -8,8 +8,8 @@ export default function RR() {
   const today = new Date();
 
   const sortedTimelines = timelines.slice().sort((a, b) => {
-    const dateA = new Date(a.date["start"] || a.date);
-    const dateB = new Date(b.date["start"] || b.date);
+    const dateA = new Date(a.date["end"] || a.date);
+    const dateB = new Date(b.date["end"] || b.date);
 
     const diffA = Math.abs(today.getTime() - dateA.getTime());
     const diffB = Math.abs(today.getTime() - dateB.getTime());
